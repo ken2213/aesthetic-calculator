@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+} 
+
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+#calculator {
+  width: 400px;
+  height: 580px;
+  background-color: black;
+}
+
+#screen-container {
+  height: 100px;
+  background-color: orange;
+}
+
+.screen-last {
+  height: 50px;
+  font-size: 20px;
+}
+
+.screen-current {
+  height: 50px;
+  font-size: 40px;
+  
+}
+
+.number-position {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+
+#buttons-container {
+  height: 480px;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn  {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  padding: 15px 30px;
+  border-radius: 50%;
+  display: flex;
+}
+
+
+
+/* SELECTING ID OF BUTTONS */
+
+
+
+#zero {
+  width: 180px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* DELETE ICON */
+.fa-delete-left {
+  font-size: 30px;
+}
+
+
+
+
