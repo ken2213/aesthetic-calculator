@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
 
-
 body {
   font-family: 'Poppins', sans-serif;
 } 
-
 
 #main {
   display: flex;
@@ -21,25 +20,30 @@ body {
 }
 
 #calculator {
-  width: 400px;
-  height: 580px;
-  background-color: black;
+  width: 300px;
+  height: 480px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: white;
 }
 
+
+/* SCREEN DISPLAY STYLING */
 #screen-container {
-  height: 100px;
-  background-color: orange;
+  background-color: white;
+  border: #ddd 2px solid;
+  margin-bottom: 10px;
+  padding-right: 5px;
 }
 
 .screen-last {
-  height: 50px;
+  height: 30px;
   font-size: 20px;
 }
 
 .screen-current {
-  height: 50px;
-  font-size: 40px;
-  
+  height: 70px;
+  font-size: 30px;
 }
 
 .number-position {
@@ -49,47 +53,58 @@ body {
 }
 
 
+/* BUTTONS STYLING */
 #buttons-container {
-  height: 480px;
-  background-color: azure;
+  height: 320px;
+  width: 260px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  row-gap: 5px;
 }
 
 .row {
-  width: 400px;
+  width: 260px; 
   display: flex;
   justify-content: space-around;
 }
 
 .btn  {
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  padding: 15px 30px;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  display: flex;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+}
 
+.btn:active {
+  transform: scale(1);
+}
 
-/* SELECTING ID OF BUTTONS */
+.number {
+  background-color: hsl(198, 71%, 69%);
+  
+}
 
+.operator {
+  background-color: hsl(156, 46%, 53%);
+}
 
+#clear {
+  background-color: hsl(342, 57%, 70%);
+}
 
-#zero {
-  width: 180px;
+#delete {
+  background-color: hsl(281, 18%, 48%);
+}
+
+#equal {
+  background-color: yellow;
+  width: 120px;
   border-radius: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-/* DELETE ICON */
-.fa-delete-left {
-  font-size: 30px;
 }
 
 
