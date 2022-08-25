@@ -25,24 +25,30 @@ body {
   border-radius: 10px;
   padding: 10px 20px;
   background-color: white;
+  box-shadow: inset 6px 6px 13px #fff, 
+              inset 6px 6px 13px rgba(0, 0, 0, .16);
 }
 
 
 /* SCREEN DISPLAY STYLING */
 #screen-container {
-  background-color: white;
-  border: #ddd 2px solid;
   margin-bottom: 10px;
-  padding-right: 5px;
+  padding-right: 15px;
+  box-shadow: inset -6px -6px 13px #fff, 
+              inset 6px 6px 13px rgba(0, 0, 0, .16);
+  border: none;
+  border-radius: 20px;
+  color: rgb(26, 25, 25);
+  background-color: #ecf0f3;
 }
 
 .screen-last {
-  height: 30px;
+  height: 40px;
   font-size: 20px;
 }
 
 .screen-current {
-  height: 70px;
+  height: 55px;
   font-size: 30px;
 }
 
@@ -68,6 +74,14 @@ body {
   justify-content: space-around;
 }
 
+button {
+  box-shadow: inset 1px 1px 5px #fff, 
+  2px 2px 3px rgba(0, 0, 0, .15);
+  background-color: #ecf0f3;
+  border: none;
+  font-weight: bold;
+}
+
 .btn  {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -84,29 +98,89 @@ body {
   transform: scale(1);
 }
 
+/* NUMBER BUTTON STYLINGS*/
 .number {
   background-color: hsl(198, 71%, 69%);
-  
 }
 
+.number:hover {
+  background-color: hsl(198, 71%, 77%);
+}
+
+.number:active {
+  color: hsl(198, 71%, 90%);
+  background-color: hsl(198, 71%, 50%);
+}
+
+/* OPERATOR BUTTON STYLINGS*/
 .operator {
   background-color: hsl(156, 46%, 53%);
 }
 
+.operator:hover {
+  background-color: hsl(156, 46%, 61%);
+}
+
+.operator:active {
+  color: hsl(156, 46%, 90%);
+  background-color: hsl(156, 46%, 34%);
+}
+
+/* CLEAR BUTTON STYLINGS*/
 #clear {
   background-color: hsl(342, 57%, 70%);
 }
 
+#clear:hover {
+  background-color: hsl(342, 57%, 78%);
+}
+
+#clear:active {
+  color: hsl(342, 57%, 90%);;
+  background-color: hsl(342, 57%, 51%);
+}
+
+/* DELETE BUTTON STYLINGS*/
 #delete {
   background-color: hsl(281, 18%, 48%);
 }
 
+#delete:hover {
+  background-color: hsl(281, 18%, 56%);
+}
+
+#delete:active {
+  color: hsl(281, 18%, 90%);
+  background-color: hsl(281, 18%, 29%);
+}
+
+/* DECIMAL POINT BUTTON STYLINGS*/
+#decimal-point {
+  background-color: hsl(35, 100%, 64%);
+}
+
+#decimal-point:hover {
+  background-color: hsl(35, 100%, 72%);
+}
+
+#decimal-point:active {
+  color: hsl(35, 100%, 90%);
+  background-color: hsl(35, 100%, 45%);
+}
+
+
+/* EQUAL BUTTON STYLINGS*/
 #equal {
-  background-color: yellow;
+  background-color: hsl(35, 100%, 64%);
   width: 120px;
   border-radius: 50px;
 }
 
+#equal:hover {
+  background-color: hsl(35, 100%, 72%);
+}
 
-
-
+#equal:active {
+  color: hsl(35, 100%, 90%);
+  background-color: hsl(35, 100%, 45%);
+}
