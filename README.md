@@ -1,4 +1,4 @@
-# Calculator 
+# Aesthetic Calculator 
 
 An aesthetic looking calculator mini project created using HTML, CSS, & JavaScript
 
