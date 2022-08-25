@@ -1,6 +1,6 @@
 # Calculator 
 
-A mini project created in HTML, CSS, & JavaScript
+An aesthetic looking calculator mini project created using HTML, CSS, & JavaScript
 
 ## Features
 
