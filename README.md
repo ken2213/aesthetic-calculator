@@ -28,4 +28,4 @@ Future Updates
 - Dark Mode Toggle/Button
 
 ## View it here
-[Calculator](https://ken2213.github.io/calculator/)
+[Calculator](https://ken2213.github.io/aesthetic-calculator/)
