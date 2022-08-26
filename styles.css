@@ -8,15 +8,28 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: repeating-linear-gradient(to left, hsl(16, 49%, 79%), hsl(37, 100%, 82%), hsl(340, 100%, 75%), hsl(282, 100%, 83%), hsl(241, 60%, 70%));
+  background-size: 300% 300%;
+  animation: aesthetic 70s ease infinite; 
 } 
+
+@keyframes aesthetic { 
+  0%{
+    background-position: 0% 50%
+  }
+  50%{
+    background-position: 100% 25%
+  }
+  100%{
+    background-position:0% 50%
+  }
+}
 
 #main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
-  background-color: red;
 }
 
 #calculator {
@@ -26,7 +39,9 @@ body {
   padding: 10px 20px;
   background-color: white;
   box-shadow: inset 6px 6px 13px #fff, 
-              inset 6px 6px 13px rgba(0, 0, 0, .16);
+              inset 6px 6px 13px rgba(0, 0, 0, .16),
+              6px 6px 13px rgba(0, 0, 0, .16),
+              6px 6px 13px rgba(0, 0, 0, .16);
 }
 
 
@@ -184,4 +199,71 @@ button {
 #equal:active {
   color: hsl(35, 100%, 90%);
   background-color: hsl(35, 100%, 45%);
+}
+
+
+/* FOOTER STYLING */
+
+#footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  background-color:hsla(0, 0%, 0%, 80%);
+}
+
+.footer-logo-container {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  transition: transform 1s ease;
+}
+
+.fa-brands:hover {
+  transform: rotate(720deg);
+}
+
+.fa-brands:active {
+  transform: scale(1);
+}
+
+
+.fa-github {
+  color: hsl(102, 53%, 52%);
+}
+
+.fa-github:hover {
+  color: hsl(102, 53%, 70%);
+}
+
+.fa-github:active {
+  color: hsl(102, 53%, 33%);
+}
+
+.fa-linkedin {
+  color: hsl(201, 100%, 35%);
+}
+
+.fa-linkedin:hover {
+  color: hsl(201, 100%, 52%);
+}
+
+.fa-linkedin:active {
+  color: hsl(201, 100%, 15%);
+}
+
+#footer-text {
+  color: white;
+  font-size: 20px;
+}
+
+.fa-heart {
+  color: crimson;
 }

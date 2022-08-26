@@ -173,6 +173,9 @@ function handleKeyPress(e) {
   if (e.key === "*") {
     handleOperator("x");
   }
+  if (e.key === "%") {
+    handleOperator("%");
+  }
   if (e.key === ".") {
     addDecimalPoint();
   }
