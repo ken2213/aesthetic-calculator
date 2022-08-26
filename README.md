@@ -2,6 +2,11 @@
 
 An aesthetic looking calculator mini project created using HTML, CSS, & JavaScript
 
+Has a keyboard support for faster calculations
+
+Note:
+Please use "Esc" button to clear the calculator
+
 ## Features
 
 Operators
@@ -13,6 +18,7 @@ Operators
 
 User Interface & User Experience
 - Double Screen Feature for Operand
+- Keyboard Press Support
 - Optimized User Interface
 - Pastel Color
 - Aesthetic Look

@@ -5,7 +5,7 @@ let operator  = "";
 const previousScreen = document.getElementById('previous-screen');
 const currentScreen = document.getElementById('current-screen');
 
-window.addEventListener('click', handleKeyPress)
+window.addEventListener('keydown', handleKeyPress)
 
 // Fetching Clear Button & with Click Function
 const clearButton = document.getElementById('clear');
@@ -155,12 +155,35 @@ function addDecimalPoint() {
   }
 }
 
-
-
+// Handles keyboard press
 function handleKeyPress(e) {
   e.preventDefault();
-  
+  if (e.key >= 0 && e.key <= 9) {
+    handleNumber(e.key);
+  }
+  if (
+    e.key === "Enter" ||
+    (e.key === "=" && currentNumber != "" && previousNumber != "")
+  ) {
+    calculate();
+  }
+  if (e.key === "+" || e.key === "-" || e.key === "/") {
+    handleOperator(e.key);
+  }
+  if (e.key === "*") {
+    handleOperator("x");
+  }
+  if (e.key === ".") {
+    addDecimalPoint();
+  }
+  if (e.key === "Backspace") {
+    deleteDigit();
+  }
+  if (e.key === "Escape") {
+    clearCalculator();
+  }
 }
+
 
 
 

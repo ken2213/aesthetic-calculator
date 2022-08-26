@@ -32,6 +32,7 @@ body {
 
 /* SCREEN DISPLAY STYLING */
 #screen-container {
+  margin-top: 20px;
   margin-bottom: 10px;
   padding-right: 15px;
   box-shadow: inset -6px -6px 13px #fff, 
