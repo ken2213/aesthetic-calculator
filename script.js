@@ -167,11 +167,14 @@ function handleKeyPress(e) {
   ) {
     calculate();
   }
-  if (e.key === "+" || e.key === "-" || e.key === "/") {
+  if (e.key === "+" || e.key === "-") {
     handleOperator(e.key);
   }
   if (e.key === "*") {
     handleOperator("x");
+  }
+  if (e.key === "/") {
+    handleOperator("÷")
   }
   if (e.key === "%") {
     handleOperator("%");
